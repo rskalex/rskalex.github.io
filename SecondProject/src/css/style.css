@@ -275,6 +275,11 @@ html {
   outline: none;
   margin-bottom: 100px;
 }
+@media (max-width: 550px) {
+  .services .services-item {
+    max-width: 250px;
+  }
+}
 .services-item:hover {
   background-color: #00897b;
   color: #fff;

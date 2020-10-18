@@ -17,6 +17,22 @@ html{
 }
 .container{
     width: 1300px;
+
+    @media (max-width: 1200px) {
+        max-width: 970px;
+    }
+
+    @media (max-width: 992px) {
+        max-width: 750px;
+    }
+
+    @media (max-width: 767px){
+        max-width: 530px;
+    }
+
+    @media (max-width: 550px){
+        max-width: 320px;
+    }
 }
 // nav
 .d6 {
@@ -291,6 +307,8 @@ html{
         min-height: 950px;
         width: 1300px;
 
+        
+
         .portfolio-item{
             background-color: #000;
             display: inline-block;
@@ -302,11 +320,7 @@ html{
             text-align: center;
 
             position: relative;
-
-            @media (max-width: 962px){
-                height: 400px;
-                width: 400px;
-            }
+  
 
             .caption{
                 color: #fff;
@@ -320,6 +334,11 @@ html{
 
             &:hover .caption{
                 display: block;
+            }
+
+            @media (max-width: 767px){
+                display: block;
+                margin: 40px auto;
             }
         }
     }

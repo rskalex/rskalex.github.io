@@ -8,6 +8,26 @@ html {
 .container {
   width: 1300px;
 }
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 530px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    max-width: 320px;
+  }
+}
 .d6 {
   background: #B46381;
 }
@@ -305,12 +325,6 @@ html {
   text-align: center;
   position: relative;
 }
-@media (max-width: 962px) {
-  .portfolio-box .portfolio-item {
-    height: 400px;
-    width: 400px;
-  }
-}
 .portfolio-box .portfolio-item .caption {
   color: #fff;
   position: absolute;
@@ -320,6 +334,12 @@ html {
 }
 .portfolio-box .portfolio-item:hover .caption {
   display: block;
+}
+@media (max-width: 767px) {
+  .portfolio-box .portfolio-item {
+    display: block;
+    margin: 40px auto;
+  }
 }
 .portfolio .btn-box {
   -webkit-box-pack: justify;

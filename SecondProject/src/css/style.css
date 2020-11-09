@@ -94,7 +94,7 @@ html {
 }
 .home {
   height: 660px;
-  background: url('/src/img/home-bg.jpg') center / cover no-repeat;
+  background: url('/src/img/home-bg.jpg') center \ cover no-repeat;
 }
 .home-contant {
   height: 100%;

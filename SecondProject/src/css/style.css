@@ -94,7 +94,7 @@ html {
 }
 .home {
   height: 660px;
-  background: url('../img/home-bg.jpg') center no-repeat;
+  background: url('/src/img/home-bg.jpg') center no-repeat;
   background-size: cover;
 }
 .home-contant {
@@ -749,7 +749,8 @@ html {
 }
 .contact {
   width: 100%;
-  background: url('../img/contact-bg.jpg') center no-repeat;
+  background: url('../img/home-bg.jpg') center no-repeat;
+  background-size: cover;
   color: #fff;
 }
 .contact-box {

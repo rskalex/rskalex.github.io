@@ -1,4 +1,4 @@
 # Русак Александр
-##Моё Портфолио
+My Portfolio
 
-[MyFirstProjaect](https://rskalex.github.io/Project_1/)
+[MyFirstProjaect](https://rskalex.github.io/Project_1/) - Landing Page

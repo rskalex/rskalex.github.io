@@ -5,4 +5,4 @@ My Portfolio
 
 [MySecondProjaect](https://rskalex.github.io/SecondProject/src/) - Landing Page
 
-[Projaect_ActiveBox](https://rskalex.github.io/ActiveBox/src/) - Landing Page
+[Projaect_ActiveBox](https://rskalex.github.io/ActiveBox/src/) - Responsive Landing Page

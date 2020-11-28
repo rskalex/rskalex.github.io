@@ -865,6 +865,7 @@ table {
 }
 .lots-container .lots-slider .lots-content .lot-header .lot-timer .timer-icon {
   margin-bottom: 3px;
+  display: inline-flex;
 }
 .lots-container .lots-slider .lots-content .lot-header .lot-timer .timer-lot {
   font-family: "PT Sans";

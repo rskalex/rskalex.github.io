@@ -216,7 +216,7 @@ body {
 .survival {
   height: 780px;
   width: 100%;
-  background: url("assets/survival-bg.png") center no-repeat;
+  background: url("../assets/survival-bg.png") center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1 class="title">Virtual Piano</h1>
+
+        <div class="btn-block">
+            <button class="btn note-btn">Notes</button>
+            <button class="btn letters-btn">Letters</button>
+        </div>
+
+        <div class="piano">
+            <div class="key key-white" data-letter="D" data-note="c"></div>
+            <div class="key key-black" data-letter="R" data-note="c♯"></div>
+            <div class="key key-white" data-letter="F" data-note="d"></div>
+            <div class="key key-black" data-letter="T" data-note="d♯"></div>
+            <div class="key key-white" data-letter="G" data-note="e"></div>
+            <div class="key key-white" data-letter="H" data-note="f"></div>
+            <div class="key key-black" data-letter="U" data-note="f♯"></div>
+            <div class="key key-white" data-letter="J" data-note="g"></div>
+            <div class="key key-black" data-letter="I" data-note="g♯"></div>
+            <div class="key key-white" data-letter="K" data-note="a"></div>
+            <div class="key key-black" data-letter="O" data-note="a♯"></div>
+            <div class="key key-white" data-letter="L" data-note="b"></div>
+        </div>
+
+        <button class="btn-fullscreen"></button>
+
+        <audio src="assets/audio/c.mp3" id="c" data-note="c" data-letter="D"></audio>
+        <audio src="assets/audio/c♯.mp3"id="c♯" data-note="c♯" data-letter="R"></audio>
+        <audio src="assets/audio/d.mp3" id="d" data-note="d" data-letter="F"></audio>
+        <audio src="assets/audio/d♯.mp3"id="d♯" data-note="d♯" data-letter="T"></audio>
+        <audio src="assets/audio/e.mp3" id="e" data-note="e" data-letter="G"></audio>
+        <audio src="assets/audio/f.mp3"id="f" data-note="f" data-letter="H"></audio>
+        <audio src="assets/audio/f♯.mp3" id="f♯" data-note="f♯" data-letter="U"></audio>
+        <audio src="assets/audio/g.mp3"id="g" data-note="g" data-letter="J"></audio>
+        <audio src="assets/audio/g♯.mp3" id="g♯" data-note="g♯" data-letter="I"></audio>
+        <audio src="assets/audio/a.mp3"id="a" data-note="a" data-letter="K"></audio>
+        <audio src="assets/audio/a♯.mp3" id="a♯" data-note="a♯" data-letter="O"></audio>
+        <audio src="assets/audio/b.mp3"id="b" data-note="b" data-letter="L"></audio>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

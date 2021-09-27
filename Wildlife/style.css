@@ -16,7 +16,6 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -249,6 +248,7 @@ body {
 }
 .survival-container .survival-inner .survival-btn {
   margin-bottom: 25px;
+  border: 0;
   outline: none;
 }
 
@@ -401,6 +401,11 @@ body {
   text-align: center;
   color: #F7F7F7;
   width: 100%;
+}
+@media (max-width: 1440px) {
+  .articles-container .articles-slider .slider-list .slider-item .item-info .item-subtitle {
+    font-size: 14px;
+  }
 }
 @media (max-width: 720px) {
   .articles-container .articles-slider .slider-list .item-2, .articles-container .articles-slider .slider-list .item-3 {
@@ -584,6 +589,7 @@ body {
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-1:hover {
   cursor: pointer;
+  filter: opacity(0.7)
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-2 {
   display: -webkit-inline-box;
@@ -596,6 +602,7 @@ body {
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-2:hover {
   cursor: pointer;
+  filter: opacity(0.7)
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-3 {
   display: -webkit-inline-box;
@@ -608,6 +615,7 @@ body {
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-3:hover {
   cursor: pointer;
+  filter: opacity(0.7)
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-4 {
   display: -webkit-inline-box;
@@ -619,4 +627,5 @@ body {
 }
 .footer-container .footer-body .social .social-list .nav-list-item .social-item-4:hover {
   cursor: pointer;
+  filter: opacity(0.7)
 }

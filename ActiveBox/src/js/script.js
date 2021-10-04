@@ -51,7 +51,7 @@ $(function() {
         event.preventDefault();
 
         nav.toggleClass('active');
-
+        navToggle.toggleClass('active');
     });
 
 

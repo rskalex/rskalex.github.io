@@ -58,16 +58,21 @@ table {
 body {
   background-color: #621402;
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
+  padding: 0 15px;
   margin: auto;
 }
 
 .header {
   width: 100%;
+  min-height: 100vh;
   padding: 20px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url("../assets/image/main-bg.png") no-repeat top/cover;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../assets/image/main-bg.png") no-repeat top/cover;
 }
 .header-container {
   display: -webkit-box;
@@ -76,7 +81,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1170px;
+  max-width: 1170px;
   height: 33px;
 }
 .header-container .logo-icon {
@@ -117,4 +122,243 @@ body {
   height: 33px;
   border-radius: 50%;
   margin-left: 11px;
+}
+.header .film {
+  color: white;
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .film-info .film-subtitle {
+  font-size: 24px;
+  line-height: 150%;
+  opacity: 0.5;
+}
+.header .film-info .film-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 11px 0 23px 0;
+}
+.header .film-info .film-descr {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+  margin-bottom: 53px;
+}
+.header .film-info .film-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .film-info .film-details .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 34px;
+}
+.header .film-info .film-details .time img {
+  margin-right: 14px;
+}
+.header .film-info .film-details .time .time-text {
+  font-size: 16px;
+  line-height: 150%;
+}
+.header .film-info .film-details .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .film-info .film-details .rating img {
+  margin-right: 12px;
+}
+.header .film-info .film-details .rating .rating-text {
+  font-size: 16px;
+  line-height: 150%;
+}
+.header .film-info .film-details .rating .rating-text .rating-current {
+  font-size: 24px;
+}
+.header .film .film-trailer {
+  margin: auto;
+}
+.header .film .film-trailer:hover {
+  cursor: pointer;
+}
+.header .film .film-trailer:hover path {
+  fill: #FFF;
+}
+.header .film .film-trailer:hover circle {
+  fill: #F20D01;
+}
+.header .session-container .session-wrapper {
+  padding: 46px 0 63px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header .session-container .session-wrapper .date {
+  margin-right: 95px;
+}
+.header .session-container .session-wrapper .date .date-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.header .session-container .session-wrapper .date .date-block .date-item {
+  width: 90px;
+  height: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 9px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header .session-container .session-wrapper .date .date-block .date-item .day {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+}
+.header .session-container .session-wrapper .date .date-block .date-item:last-child {
+  margin-right: 0;
+}
+.header .session-container .session-wrapper .date .date-block .date-item:hover {
+  cursor: pointer;
+  color: #621402;
+  background: #FE8E05;
+  border: 1px solid #FE8E05;
+}
+.header .session-container .session-wrapper .date .date-block .date-item:active, .header .session-container .session-wrapper .date .date-block .date-item:focus {
+  cursor: pointer;
+  color: #621402;
+  background: #FE8E05;
+  border: 1px solid #FE8E05;
+}
+.header .session-container .session-wrapper .cinema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header .session-container .session-wrapper .cinema .session-label {
+  margin-bottom: 20px;
+}
+.header .session-container .session-wrapper .cinema .cinema-wrapper {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .session-container .session-wrapper .cinema .cinema-wrapper .cinema-list {
+  width: 470px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF;
+  padding: 18px;
+  cursor: pointer;
+}
+.header .session-container .session-wrapper .cinema .cinema-wrapper .cinema-list:focus {
+  outline: none;
+}
+.header .session-container .session-wrapper .cinema .cinema-wrapper .cinema-list option {
+  background: #621402;
+  color: #fff;
+  height: 50px;
+}
+.header .session-container .session-wrapper .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header .session-container .session-wrapper .time .session-label {
+  margin-bottom: 20px;
+}
+.header .session-container .session-wrapper .time .time-wrapper {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .session-container .session-wrapper .time .time-wrapper .time-list {
+  width: 100px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF;
+  padding: 18px;
+  cursor: pointer;
+}
+.header .session-container .session-wrapper .time .time-wrapper .time-list:focus {
+  outline: none;
+}
+.header .session-container .session-wrapper .time .time-wrapper .time-list option {
+  background: #621402;
+  color: #fff;
+  height: 50px;
+}
+
+.session-label {
+  font-size: 16px;
+  line-height: 19px;
 }

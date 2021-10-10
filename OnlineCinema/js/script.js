@@ -11,7 +11,7 @@ schemeSvg.addEventListener('click', (e) => {
     let target = e.target;
     if (!target.classList.contains('booked')) {
         target.classList.toggle('active');
-        totalPrice += cost;
+        totalPrice = document.querySelectorAll('.active').length * cost;
         price.textContent = totalPrice;
     }
     

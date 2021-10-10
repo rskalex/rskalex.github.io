@@ -12,34 +12,128 @@
 </head>
 <body>
     <header class='header'>
-        <div class="header-container container">
-            <a href="" class="logo-icon">
-                <img src="assets/image/logo.png" alt="logo">
-            </a>
-            <nav class="header-nav">
-                <ul class="nav-menu">
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Главная</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Фильмы</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Кинотеатры</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">События</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Поддержка</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="user">
-                <span class=''>Привет, Мила</span>
-                <img src="assets/image/user.png" alt="avatar">
+            <div class="header-container container">
+                <a href="" class="logo-icon">
+                    <img src="assets/image/logo.png" alt="logo">
+                </a>
+                <nav class="header-nav">
+                    <ul class="nav-menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Главная</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Фильмы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Кинотеатры</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">События</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Поддержка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user">
+                    <span class=''>Привет, Мила</span>
+                    <img src="assets/image/user.png" alt="avatar">
+                </div>
             </div>
-        </div>
-    </header>
+            
+            <div class="film container">
+                <div class="film-info">
+                    <h3 class="film-subtitle">Avengers: Infinity War</h3>
+                    <h1 class="film-title">Мстители: война бесконечности</h1>
+                    <div class="film-descr">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</div>
+                    <div class="film-details">
+                        <div class="time">
+                            <img src="assets/image/clock-icon.svg" alt="clock" class="time-icon">
+                            <span class="time-text">240 мин.</span>
+                        </div>
+                        <div class="rating">
+                            <img src="assets/image/imdb.png" alt="imdb">
+                            <span class="rating-text">
+                                <strong class="rating-current">9.2</strong> / 10
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/watch?v=UsnDPok1ZOU&ab_channel=MARVEL%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F" class="film-trailer">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                        
+                </a>
+            </div>
+    
+            <div class="session">
+                <div class="session-container container">
+                    <div class="session-wrapper">
+                        <div class="date">
+                            <span class="session-label">Дата</span>
+                            <div class="date-block">
+                                <div class="date-item">
+                                    <span class="month">Окт</span>
+                                    <span class="day">11</span>
+                                    <span class="week">пн</span>
+                                </div>
+                                <div class="date-item">
+                                    <span class="month">Окт</span>
+                                    <span class="day">12</span>
+                                    <span class="week">вт</span>
+                                </div>
+                                <div class="date-item">
+                                    <span class="month">Окт</span>
+                                    <span class="day">13</span>
+                                    <span class="week">ср</span>
+                                </div>
+                                <div class="date-item">
+                                    <span class="month">Окт</span>
+                                    <span class="day">14</span>
+                                    <span class="week">чт</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cinema">
+                            <span class="session-label">Кинотеатр</span>
+                            <div class="cinema-wrapper">
+                                <select name="cinema" class="cinema-list">
+                                    <option value="">Октябрь, пр-т Независимости, 73</option>
+                                    <option value="">Аврова, пр-т Притыцкого, 15</option>
+                                    <option value="">Silver Screen, Петра Мстиславца, 11</option>
+                                    <option value="">Дом Кино, ул. Октябрьская, 75</option>
+                                    <option value="">Салют, пр-т Ракосовского, 117</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <span class="session-label">Время</span>
+                            <div class="time-wrapper">
+                                <select name="time" class="time-list">
+                                    <option value="">12:00</option>
+                                    <option value="">14:30</option>
+                                    <option value="">15:00</option>
+                                    <option value="">17:30</option>
+                                    <option value="">20:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </header> <!--header-->
+
+    
+
 </body>
 </html>

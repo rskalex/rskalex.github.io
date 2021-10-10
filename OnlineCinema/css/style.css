@@ -71,8 +71,8 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 20px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url("assets/image/main-bg.png") no-repeat top/cover;
-  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("assets/image/main-bg.png") no-repeat top/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url("../assets/image/main-bg.png") no-repeat top/cover;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../assets/image/main-bg.png") no-repeat top/cover;
 }
 .header-container {
   display: -webkit-box;

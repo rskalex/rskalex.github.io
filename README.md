@@ -1,6 +1,6 @@
 # Русак Александр
 My Portfolio
-!ActiveBox](https://github.com/rskalex/rskalex.github.io/blob/master/ActiveBox/src/ActiveBox.jpg)
+![ActiveBox](https://github.com/rskalex/rskalex.github.io/blob/master/ActiveBox/src/ActiveBox.jpg)
 [Projaect_ActiveBox](https://rskalex.github.io/ActiveBox/src/) - Responsive Landing Page
 
 [Projaect_Luxtrader](https://rskalex.github.io/Luxtrader/src/) - Responsive Landing Page

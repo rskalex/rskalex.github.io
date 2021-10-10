@@ -69,7 +69,7 @@ body {
 
 .header {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 20px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url("../assets/image/main-bg.png") no-repeat top/cover;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../assets/image/main-bg.png") no-repeat top/cover;
@@ -346,7 +346,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #FFF;
-  padding: 18px;
+  padding: 13px;
   cursor: pointer;
 }
 .header .session-container .session-wrapper .time .time-wrapper .time-list:focus {
@@ -356,6 +356,91 @@ body {
   background: #621402;
   color: #fff;
   height: 50px;
+}
+
+.scheme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 63px;
+  margin-bottom: 63px;
+}
+.scheme-container {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+.scheme-container path:not(.light, .active-default, .default) {
+  fill: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.scheme-container path:not(.light, .active-default, .default):hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.scheme-container path.booked {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+.scheme-container path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+}
+.scheme-container path.active {
+  fill: #fe8e05;
+}
+.scheme-container path.active:hover {
+  fill: #fe8e05;
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+}
+.price-block-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.price-block-inner .price-text {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+.price-block-inner .price {
+  font-size: 36px;
+  line-height: 39px;
+}
+.price-block-inner .price strong {
+  font-size: 52px;
+  line-height: 61px;
+}
+.price-block .btn {
+  font-size: 18px;
+  line-height: 21px;
+  background: #FE8E05;
+  border-radius: 5px;
+  padding: 24px 52px;
+  color: #fff;
+  border: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.price-block .btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .session-label {

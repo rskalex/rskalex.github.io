@@ -11,4 +11,4 @@ My Portfolio
 
 [Projaect_Virtual-piano](https://rskalex.github.io/virtual-piano/index.html) - JS Project Virtual Piano
 
-[Online Cinema](https://rskalex.github.io/OnlineCinema/) - Landing Page
+[Online Cinema](https://rskalex.github.io/Online Cinema/) - Landing Page

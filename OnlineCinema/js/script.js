@@ -16,3 +16,23 @@ schemeSvg.addEventListener('click', (e) => {
     }
     
 });
+
+//burger
+
+const burgerBtn = document.querySelector('.burger'),
+      menu = document.querySelector('.nav-menu');
+
+window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('burger')) {
+        burgerBtn.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+    console.log(burgerBtn)
+});
+
+window.addEventListener('click', (e) => {
+    if (!e.target.closest('.header-nav')) {
+        burgerBtn.classList.remove('active');
+        menu.classList.remove('active');
+    }
+});

@@ -59,6 +59,10 @@ body {
   background-color: #621402;
   font-family: 'Roboto', sans-serif;
   color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container {
@@ -428,12 +432,8 @@ body {
 }
 .header .session-container .session-wrapper .date .date-block .date-item:hover {
   cursor: pointer;
-  color: #621402;
-  background: #FE8E05;
-  border: 1px solid #FE8E05;
 }
-.header .session-container .session-wrapper .date .date-block .date-item:active, .header .session-container .session-wrapper .date .date-block .date-item:focus {
-  cursor: pointer;
+.header .session-container .session-wrapper .date .date-block .date-item.active {
   color: #621402;
   background: #FE8E05;
   border: 1px solid #FE8E05;

@@ -9,12 +9,13 @@ price.textContent = totalPrice;
 schemeSvg.addEventListener('click', (e) => {
     e.preventDefault();
     let target = e.target;
-    if (!target.classList.contains('booked')) {
-        target.classList.toggle('active');
-        totalPrice = document.querySelectorAll('.active').length * cost;
-        price.textContent = totalPrice;
-    }
-    
+    if (target.classList.contains('sits')) {
+        if (!target.classList.contains('booked')) {
+            target.classList.toggle('active');
+            totalPrice = document.querySelectorAll('.active').length * cost;
+            price.textContent = totalPrice;
+        }
+    }    
 });
 
 //burger

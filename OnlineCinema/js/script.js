@@ -14,7 +14,7 @@ schemeSvg.addEventListener('click', (e) => {
     if (target.classList.contains('sits')) {
         if (!target.classList.contains('booked')) {
             target.classList.toggle('active');
-            totalPrice = document.querySelectorAll('.active').length * cost;
+            totalPrice = schemeSvg.querySelectorAll('.active').length * cost;
             price.textContent = totalPrice;
         }
     }    

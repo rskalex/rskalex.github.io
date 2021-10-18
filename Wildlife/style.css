@@ -251,7 +251,11 @@ body {
   border: 0;
   outline: none;
 }
-
+@media (max-width: 720px) {
+  .survival {
+    height: 600px;
+  }
+}
 .articles {
   height: 1368px;
   background-color: #cccccc;
@@ -296,6 +300,11 @@ body {
   color: #666666;
   margin-bottom: 120px;
 }
+@media (max-width: 560px) {
+  .container {
+    width: 90%;
+  }
+}
 @media (max-width: 1250px) {
   .articles-container .articles-header .articles-subtitle {
     margin-bottom: 60px;
@@ -319,6 +328,12 @@ body {
   .articles-container .articles-slider {
     margin-right: 10px;
     margin-bottom: 120px;
+  }
+}
+@media (max-width: 560px) {
+  .articles-container .articles-slider {
+    margin-right: 10px;
+    margin-bottom: 50px;
   }
 }
 .articles-container .articles-slider .prev {
@@ -421,6 +436,15 @@ body {
   color: #333333;
   margin-bottom: 53px;
 }
+.articles-container .articles-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .articles-container .articles-form .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,7 +457,12 @@ body {
 }
 @media (max-width: 720px) {
   .articles-container .articles-form .form {
-    width: 350px;
+    width: 320px;
+  }
+}
+@media (max-width: 560px) {
+  .articles-container .articles-form .form {
+    width: 250px;
   }
 }
 .articles-container .articles-form .form .form-input {
@@ -450,6 +479,11 @@ body {
 @media (max-width: 720px) {
   .articles-container .articles-form .form .form-input {
     width: 300px;
+  }
+}
+@media (max-width: 560px) {
+  .articles-container .articles-form .form .form-input{
+    width: 200px;
   }
 }
 .articles-container .articles-form .form .form-input:active, .articles-container .articles-form .form .form-input:focus {
@@ -560,6 +594,16 @@ body {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 560px) {
+  .footer-container .footer-body .nav-footer .nav-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer-container .footer-body .nav-footer .nav-list .nav-list-item {
+    margin-right: 0;
+  }
+}
+
 .footer-container .footer-body .nav-footer .nav-list-item {
   margin-right: 65px;
 }

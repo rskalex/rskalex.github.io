@@ -1,6 +1,6 @@
 @import 'null';
 
-body {
+body{
     font-family: 'Roboto', sans-serif;
     user-select: none;
     box-sizing: border-box;
@@ -22,10 +22,11 @@ body {
     }
 }
 
-.header {
+.header{
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 9px;
+    margin-bottom: 15px;
     &-container{
         display: flex;
         align-items: center;
@@ -33,12 +34,14 @@ body {
             margin-right: 76px;
         }
         .search-form{
-            width: 620px;
+            max-width: 620px;
             height: 50px;
             flex-grow: 1;
             position: relative;
+            margin-right: 30px;
             .search-input{
                 width: 100%;
+                // max-width: 620px;
                 background: rgba(238, 238, 238, 0.71);
                 border-radius: 10px;
                 outline: none;
@@ -100,5 +103,169 @@ body {
         
     }
 
+}
+
+.food{
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    &-container{
+        margin: 0 auto;
+        .food-slider{
+            width: 100%;
+            position: relative;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            margin: 0 -10px;
+            margin-bottom: 50px;
+            .food-slider-item{
+                border-radius: 20px;
+                width: 100%;
+                min-height: 399px;
+                display: flex;
+                align-items: center;
+                padding-left: 100px;
+                flex: 0 0 100%;
+                .item-inner{
+                    max-width: 400px;
+                    .item-title{
+                        font-weight: bold;
+                        font-size: 50px;
+                        line-height: 51px;
+                    }
+                    .item-descr{
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 23px;
+                        margin: 15px 0 32px 0;
+                    }
+                    .item-btn{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 23px;
+                        color: #fff;;
+                        background: #F47322;
+                        border-radius: 25px;
+                        padding: 12px 52px;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .item-autumn{
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url('../assets/image/slide-card-1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 30px;
+            }
+            .item-summer{
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url('../assets/image/slide-card-2.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 30px;
+            }
+            .item-vit{
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url('../assets/image/slide-card-3.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .text-light{
+                background-color: gray;
+                color: #fff;
+            }
+            .food-slider-control{
+                position: absolute;
+                bottom: 39px;
+                right: 46px;
+                .arrow{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: rgba(235, 235, 235, 0.7);
+                    border: none;
+                    cursor: pointer;
+                }
+                .prev{
+                    background-image: url('../assets/image/prev-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-right: 17px;
+                }
+                .next{
+                    background-image: url('../assets/image/next-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+
+        .promo{
+            width: 100%;;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -10px;
+            .promo-item{
+                background-color: gray;
+                color: #fff;
+                max-width: 570px;
+                border-radius: 20px;
+                min-height: 380px;
+                padding-top: 36px;
+                padding-left: 32px;
+                display: flex;
+                flex: 0 0 50%;
+                .promo-item-inner{
+                    max-width: 235px;
+                    .promo-title{
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 23px;
+                        color: #FFFFFF;
+                    }
+                    .promo-descr{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: #FFFFFF;
+                        margin: 21px 0 72px 0;
+                    }
+                    .price{
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 23px;
+                    }
+                    .deliver-price{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 23px;
+                        margin: 6px 0 25px 0;
+                    }
+                    .promo-btn{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: #5F5F61;
+                        padding: 13px 52px;
+                        cursor: pointer;
+                        border-radius: 50px;
+                    }
+                }
+            }
+            .sweet{
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/image/promo-item-1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+            }
+            .other{
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/image/promo-item-2.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
 }
 

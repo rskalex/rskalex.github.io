@@ -422,6 +422,11 @@ body {
   cursor: pointer;
   border-radius: 50px;
 }
+@media (max-width: 769px) {
+  .food-container .promo .promo-item .promo-item-inner .promo-btn {
+    padding: 13px 15px;
+  }
+}
 .food-container .promo .sweet {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/image/promo-item-1.png");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/image/promo-item-1.png");

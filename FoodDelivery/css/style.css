@@ -90,9 +90,14 @@ body {
 .title {
   font-weight: 500;
   font-size: 32px;
-  line-height: 23px;
+  line-height: 40px;
   color: #000000;
   margin: 0 -10px;
+}
+@media (max-width: 768px) {
+  .title {
+    margin: 0;
+  }
 }
 
 .header {
@@ -111,6 +116,14 @@ body {
 }
 .header-container .header-logo {
   margin-right: 76px;
+}
+@media (max-width: 768px) {
+  .header-container .header-logo {
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .header-container .search-form {
   max-width: 620px;
@@ -133,7 +146,7 @@ body {
 }
 @media (max-width: 769px) {
   .header-container .search-form .search-input {
-    display: none;
+    visibility: hidden;
   }
 }
 .header-container .search-form .header-btn {
@@ -143,6 +156,11 @@ body {
   height: 100%;
   right: 18px;
   cursor: pointer;
+}
+@media (max-width: 769px) {
+  .header-container .search-form .header-btn {
+    right: 0;
+  }
 }
 .header-container .auth {
   display: -webkit-box;
@@ -417,6 +435,11 @@ body {
   cursor: pointer;
   border-radius: 50px;
 }
+@media (max-width: 769px) {
+  .food-container .promo .promo-item .promo-item-inner .promo-btn {
+    padding: 13px 15px;
+  }
+}
 .food-container .promo .sweet {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/image/promo-item-1.png");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/image/promo-item-1.png");
@@ -442,7 +465,7 @@ body {
 .food-container .delivery-title {
   font-weight: 500;
   font-size: 32px;
-  line-height: 23px;
+  line-height: 32px;
   color: #000000;
   margin-bottom: 47px;
   margin-left: -10px;

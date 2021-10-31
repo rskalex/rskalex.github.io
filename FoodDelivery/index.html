@@ -48,36 +48,41 @@
     <main class="food">
         <div class="container food-container">
             <div class="food-slider">
-                <div class="food-slider-item text-light item-autumn">
-                    <div class="item-inner">
-                        <h2 class="item-title">Неделя осенних овощей</h2>
-                        <div class="item-descr">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</div>
-                        <a href="/">
-                            <button class="item-btn btn">Заказать со скидкой</button>
-                        </a>
+                <div class="food-slider-wrapper">
+                    <div class="food-slider-inner">
+                        <div class="food-slider-item text-light item-autumn">
+                            <div class="item-inner">
+                                <h2 class="item-title">Неделя осенних овощей</h2>
+                                <div class="item-descr">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</div>
+                                <a href="/">
+                                    <button class="item-btn btn">Заказать со скидкой</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="food-slider-item text-light item-summer">
+                            <div class="item-inner">
+                                <h2 class="item-title">Неделя летних овощей</h2>
+                                <div class="item-descr">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</div>
+                                <a href="/">
+                                    <button class="item-btn btn">Заказать со скидкой</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="food-slider-item text-light item-vit">
+                            <div class="item-inner">
+                                <h2 class="item-title">Витаминная неделя</h2>
+                                <div class="item-descr">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</div>
+                                <a href="/">
+                                    <button class="item-btn btn">Заказать со скидкой</button>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-                <div class="food-slider-item text-light item-summer">
-                    <div class="item-inner">
-                        <h2 class="item-title">Неделя летних овощей</h2>
-                        <div class="item-descr">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</div>
-                        <a href="/">
-                            <button class="item-btn btn">Заказать со скидкой</button>
-                        </a>
+                    <div class="food-slider-control">
+                        <button class="prev arrow"></button>
+                        <button class="next arrow"></button>
                     </div>
-                </div>
-                <div class="food-slider-item text-light item-vit">
-                    <div class="item-inner">
-                        <h2 class="item-title">Витаминная неделя</h2>
-                        <div class="item-descr">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</div>
-                        <a href="/">
-                            <button class="item-btn btn">Заказать со скидкой</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="food-slider-control">
-                    <button class="prev arrow"></button>
-                    <button class="next arrow"></button>
                 </div>
             </div> <!--slider-->
 
@@ -148,7 +153,7 @@
                     <div class="tabs-item">Мясное</div>
                 </div>
                 <div class="menu-content">
-                    <div class="first">
+                    <div class="popular-block block">
                         <div class="content-item">
                             <img src="assets/image/item-1.jpeg" alt="шашлык из курицы" srcset="">
                             <h3 class="content-title">Шашлык из куриных бедрышек</h3>
@@ -192,6 +197,106 @@
                             <div class="content-info">
                                 <div class="price">
                                     <span class="price-rb">10.00 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vegetable-block block">
+                        <div class="content-item">
+                            <img src="assets/image/veg-1.jpeg" alt="Салат Фалафель" srcset="">
+                            <h3 class="content-title">Салат Фалафель</h3>
+                            <p class="content-descr">480г, листья салата, огурец, помидоры, томаты черри, Пармезан, фалафель, соус чесночно-ореховый</p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">12.90 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <img src="assets/image/veg-2.jpeg" alt="Салат Очеано" srcset="">
+                            <h3 class="content-title">Салат Очеано</h3>
+                            <p class="content-descr">440г, листья салата, лосось, крем-сыр, огурец, помидор, яйцо куриное, соус лимонно-медовый </p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">14.50 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <img src="assets/image/veg-3.jpeg" alt="Салат Димента" srcset="">
+                            <h3 class="content-title">Салат Димента</h3>
+                            <p class="content-descr">320г, листья салата, вяленое мясо, Моцарелла, маслины, руккола, помидоры, соус огуречно-сливочный </p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">16.20 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <img src="assets/image/veg-4.jpeg" alt="Салат Марино" srcset="">
+                            <h3 class="content-title">Салат Марино</h3>
+                            <p class="content-descr">400г, листья салата, тунец, мидии, Фета в травах, овощи гриль, руккола, соус огуречно-сливочный </p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">16.20 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meat-block block">
+                        <div class="content-item">
+                            <img src="assets/image/meat-1.jpeg" alt="Свинные ребра с цукини" srcset="">
+                            <h3 class="content-title">Свинные ребра</h3>
+                            <p class="content-descr">400г, запеченные свиные рёбра. Подаются с обжаренными цукини и сальсой</p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">27.90 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <img src="assets/image/meat-2.jpeg" alt="Медальоны из говядины" srcset="">
+                            <h3 class="content-title">Медальоны</h3>
+                            <p class="content-descr">150/120г, сочные медальоны из говяжьей вырезки, подаются на подушке из сливочного соуса с голубым сыром и овощами на гриле</p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">28.50 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <img src="assets/image/meat-3.jpeg" alt="Скалопини из курицы" srcset="">
+                            <h3 class="content-title">Скалопини из курицы</h3>
+                            <p class="content-descr">300г, нежнейшее куриное филе, маринованное с розмарином, приготовленное с грибным соусом, подается с картофельными дольками и помидорами черри</p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">17.50 <small>BYN</small></span>
+                                    <span class="price-ua">500 гр</span>
+                                </div>
+                                <button class="item-btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <img src="assets/image/meat-4.jpeg" alt="Мясная лазанья" srcset="">
+                            <h3 class="content-title">Мясная лазанья</h3>
+                            <p class="content-descr">210/60/12г, мясо, томатный соус, соус Бешамель, сыр Моцарелла</p>
+                            <div class="content-info">
+                                <div class="price">
+                                    <span class="price-rb">14.50 <small>BYN</small></span>
                                     <span class="price-ua">500 гр</span>
                                 </div>
                                 <button class="item-btn">В корзину</button>

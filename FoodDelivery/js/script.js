@@ -1,144 +1,119 @@
-const schemeSvg = document.querySelector('.scheme-svg'),
-      price = document.querySelector('.price-total'),
-      cost = 12,
-      btn = document.querySelector('.btn'),
-      dateBlock = document.querySelectorAll('.date-item');
+const menuDescr = document.querySelectorAll('.content-descr');
 
-let totalPrice = 0;
+console.log(menuDescr[4].textContent.length)
 
-price.textContent = totalPrice;
+menuDescr.forEach(item => {
+    if (item.textContent.length >= 57) {
+        item.textContent = item.textContent.slice(0, 54) + '...'
+    }
+});
 
-schemeSvg.addEventListener('click', (e) => {
-    e.preventDefault();
-    let target = e.target;
-    if (target.classList.contains('sits')) {
-        if (!target.classList.contains('booked')) {
-            target.classList.toggle('active');
-            totalPrice = schemeSvg.querySelectorAll('.active').length * cost;
-            price.textContent = totalPrice;
+//tabs
+
+const tabs = (headerSelector, tabSelector, tabContent, activeClass, display = 'flex') => {
+    const header = document.querySelector(headerSelector),
+          content = document.querySelectorAll(tabContent),
+          tab = document.querySelectorAll(tabSelector);
+
+    function hideTabContent() {
+        content.forEach(item => {
+            item.style.display = 'none';
+        });
+
+        tab.forEach(item => {
+            item.classList.remove(activeClass);
+        });
+    }
+
+    function showTabContent(i = 0) {
+        content[i].style.display = display;
+        tab[i].classList.add(activeClass);
+    }
+
+    hideTabContent();
+    showTabContent();
+
+
+    header.addEventListener('click', (e) => {
+        const target = e.target;
+        
+        if (target.classList.contains(tabSelector.replace(/\./, '')) ||
+            target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
+            tab.forEach((item, i) => {
+                if(target == item || target.parentNode == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
         }
-    }    
-});
-
-//burger
-
-const burgerBtn = document.querySelector('.burger'),
-      menu = document.querySelector('.nav-menu');
-
-window.addEventListener('click', (e) => {
-    if (e.target.classList.contains('burger')) {
-        burgerBtn.classList.toggle('active');
-        menu.classList.toggle('active');
-    }
-});
-
-window.addEventListener('click', (e) => {
-    if (!e.target.closest('.header-nav')) {
-        burgerBtn.classList.remove('active');
-        menu.classList.remove('active');
-    }
-});
-
-//dateBlock
-
-
-function removeActiveClass() {
-    dateBlock.forEach(item => {
-        item.classList.remove('active');
     });
+};
+
+tabs('.menu-tabs', '.tabs-item', '.block', 'active');
+
+//slider
+
+function slider(container, slide, nextArr, prevArr, wrapper, field) {
+    
+    //Slider
+
+    const slides = document.querySelectorAll(slide),
+          prev = document.querySelector(prevArr),
+          next = document.querySelector(nextArr),
+          sliderWrapper = document.querySelector(wrapper),
+          sliderField = document.querySelector(field),
+          width = '1174px',
+          slider = document.querySelector(container);
+
+    let sliderIndex = 1;
+    let offset = +width.replace(/\D/g, '');;
+    
+    sliderField.style.width = 100 * slides.length + '%';
+    sliderField.style.display = 'flex';
+    sliderField.style.transition = '0.5s all';
+
+    slider.style.position = 'relative';
+
+    function deleteNotNum(string) {
+        return +string.replace(/\D/g, '');
+    }
+    
+    function addOffset(elem) {
+        elem.style.transform = `translateX(-${offset}px)`;
+    }
+
+    next.addEventListener('click', () => {
+        if (offset == deleteNotNum(width) * (slides.length - 1)) {
+            offset = 0;
+        } else {
+            offset += deleteNotNum(width);
+        }
+        addOffset(sliderField);
+
+        if (sliderIndex == slides.length) {
+            sliderIndex = 1;
+        } else {
+            sliderIndex++;
+        }
+    });
+
+    prev.addEventListener('click', () => {
+        if (offset == 0) {
+            offset = deleteNotNum(width) * (slides.length - 1);
+        } else {
+            offset -= deleteNotNum(width);
+        }
+
+        addOffset(sliderField);
+
+        if (sliderIndex == 1) {
+            sliderIndex = slides.length;
+        } else {
+            sliderIndex--;
+        }
+
+    });
+
 }
 
-function addActiveClass(i = 1) {
-    dateBlock[i].classList.add('active');
-}
-
-removeActiveClass();
-addActiveClass();
-
-dateBlock.forEach((item, i) => {
-    item.addEventListener('click', (e) => {
-        let target = e.target;
-        console.log(target)
-        if (target == item || target.closest('.date-block')) {
-            removeActiveClass();
-            addActiveClass(i);
-        }
-    });
-});
-
-//date
-
-const getDate = () => {
-    const date = new Date(),
-          month = date.getMonth(),
-          day = date.getDay(),
-          dateNum = date.getDate();
-
-    return {
-        "month": month,
-        "dateNum": dateNum,
-        "day": day
-    };
-    
-};
-
-const addZero = (num) => {
-    if (num < 10) {
-        return `0${num}`;
-    } else {
-        return num;
-    }
-};
-
-const setDate = () => {
-    const date = getDate();
-    const dateItem = document.querySelectorAll('.date-item');
-
-    dateItem.forEach((item, i) => {
-        const month = item.querySelector('.month'),
-              dateNum = item.querySelector('.day'),
-              day = item.querySelector('.week');
-
-        const weekNum = {
-            '1': 'пн',
-            '2': 'вт',
-            '3': 'ср',
-            '4': 'чт',
-            '5': 'пт',
-            '6': 'сб',
-            '7': 'вс',
-        },
-        monthNum = {
-            '1': 'янв',
-            '2': 'фев',
-            '3': 'мар',
-            '4': 'апр',
-            '5': 'май',
-            '6': 'июн',
-            '7': 'июл',
-            '8': 'авг',
-            '9': 'сен',
-            '10': 'окт',
-            '11': 'нбр',
-            '12': 'дек',
-        }
-
-        for (let key in weekNum) {
-            if (date.day === key) {
-                day.textContent = weekNum[key];
-            }           
-        }
-
-        for (let key in monthNum) {
-            if (date.month === key) {
-                month.textContent = monthNum[key];
-            }           
-        }
-
-        dateNum.textContent = addZero(date.dateNum + i);
-    });
-    
-};
-
-getDate();
-setDate();
+slider('.food-slider', '.food-slider-item', '.next', '.prev', '.food-slider-wrapper', '.food-slider-inner')

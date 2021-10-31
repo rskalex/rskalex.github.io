@@ -183,6 +183,11 @@ body {
   text-decoration: none;
   margin-right: 30px;
 }
+@media (max-width: 500px) {
+  .header-container .auth .login {
+    margin-right: 0;
+  }
+}
 .header-container .auth .shoping-card {
   width: 49px;
   height: 49px;
@@ -229,12 +234,7 @@ body {
 .food-container .food-slider {
   width: 100%;
   margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border-radius: 20px;
   margin: 0 auto;
   margin: 0 -10px;
   margin-bottom: 50px;
@@ -246,18 +246,29 @@ body {
   }
 }
 .food-container .food-slider .food-slider-wrapper {
-  max-width: 1174px;
+  border-radius: 20px;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 768px) {
+  .food-container .food-slider .food-slider-wrapper {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
 .food-container .food-slider .food-slider-wrapper .food-slider-inner {
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .food-container .food-slider .food-slider-wrapper .food-slider-inner {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 }
 .food-container .food-slider .food-slider-wrapper .food-slider-inner .food-slider-item {
   border-radius: 20px;
@@ -347,7 +358,7 @@ body {
   bottom: 39px;
   right: 46px;
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .food-container .food-slider .food-slider-wrapper .food-slider-control {
     bottom: 20px;
     right: 40px;

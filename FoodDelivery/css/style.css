@@ -63,7 +63,7 @@ body {
           user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: red;
+  bacground-color: red;
 }
 
 .container {

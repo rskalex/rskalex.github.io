@@ -66,7 +66,7 @@ function slider(container, slide, nextArr, prevArr, wrapper, field) {
           slider = document.querySelector(container);
 
     let sliderIndex = 1;
-    let offset = +width.replace(/\D/g, '');;
+    let offset = 0;
     
     sliderField.style.width = 100 * slides.length + '%';
     sliderField.style.display = 'flex';

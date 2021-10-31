@@ -71,7 +71,7 @@ function slider(container, slide, nextArr, prevArr, wrapper, field) {
     sliderField.style.maxWidth = Math.floor(+width.slice(0, width.length-2)) * 3 + 'px';
     sliderField.style.display = 'flex';
     sliderField.style.transition = '0.5s all';
-    console.log(sliderField.style.width)
+    alert(sliderField.style.width)
     slider.style.position = 'relative';
 
     function deleteNotNum(string) {

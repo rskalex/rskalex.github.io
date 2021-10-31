@@ -62,20 +62,20 @@ function slider(container, slide, nextArr, prevArr, wrapper, field) {
           next = document.querySelector(nextArr),
           sliderWrapper = document.querySelector(wrapper),
           sliderField = document.querySelector(field),
-          width = '1174px',
+          width = window.getComputedStyle(sliderWrapper).width,
           slider = document.querySelector(container);
 
     let sliderIndex = 1;
     let offset = 0;
     
-    sliderField.style.width = 100 * slides.length + '%';
+    sliderField.style.maxWidth = Math.floor(+width.slice(0, width.length-2)) * 3 + 'px';
     sliderField.style.display = 'flex';
     sliderField.style.transition = '0.5s all';
-
+    console.log(sliderField.style.width)
     slider.style.position = 'relative';
 
     function deleteNotNum(string) {
-        return +string.replace(/\D/g, '');
+        return Math.floor(+string.slice(0, string.length-2));
     }
     
     function addOffset(elem) {

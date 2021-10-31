@@ -96,6 +96,9 @@ body{
                 border-radius: 50px;
                 text-decoration: none;
                 margin-right: 30px;
+                @media (max-width:500px) {
+                    margin-right: 0;
+                }
             }
             .shoping-card{
                 width: 49px;
@@ -139,10 +142,10 @@ body{
         margin: 0 auto;
         .food-slider{
             width: 100%;
-            
             margin-bottom: 50px;
-            display: flex;
-            justify-content: center;
+            border-radius: 20px;
+            // display: flex;
+            // justify-content: center;
             margin: 0 auto;
             margin: 0 -10px;
             margin-bottom: 50px;
@@ -152,13 +155,22 @@ body{
             }
             
             .food-slider-wrapper{
-                max-width: 1174px;
+                border-radius: 20px;
+                width: 100%;
                 overflow: hidden;
                 position: relative;
+                @media (max-width: 768px) {
+                    margin: 0;
+                    margin-bottom: 25px;
+                }
                 .food-slider-inner{
+                    border-radius: 20px;
                     display: flex;
-                    justify-content: center;
                     margin: 0 auto;
+                    @media (max-width: 768px) {
+                        margin: 0;
+                        margin-bottom: 25px;
+                    }
                     .food-slider-item{
                         border-radius: 20px;
                         max-width: 1174px;
@@ -203,9 +215,6 @@ body{
                                 outline: none;
                                 border: none;
                                 cursor: pointer;
-                                &:hover{
-                                    
-                                }
                             }
                         }
                     }
@@ -231,10 +240,11 @@ body{
                     
                 }
                 .food-slider-control{
+                    // display: none;
                     position: absolute;
                     bottom: 39px;
                     right: 46px;
-                    @media (max-width: 768px) {
+                    @media (max-width: 320px) {
                         bottom: 20px;
                         right: 40px;
                     }

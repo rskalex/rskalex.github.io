@@ -101,10 +101,13 @@ body {
 }
 
 .header {
-  max-width: 1440px;
+  position: fixed;
+  width: 100%;
   margin: 0 auto;
   padding-top: 9px;
   margin-bottom: 15px;
+  z-index: 5;
+  background-color: #fff;
 }
 .header-container {
   display: -webkit-box;
@@ -188,6 +191,10 @@ body {
     margin-right: 0;
   }
 }
+.header-container .auth .login:hover {
+  background: #ccc;
+  color: #111;
+}
 .header-container .auth .shoping-card {
   width: 49px;
   height: 49px;
@@ -224,6 +231,7 @@ body {
 }
 
 .food {
+  padding-top: 86px;
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
@@ -1009,6 +1017,9 @@ body {
     margin-right: 10px;
   }
 }
+.footer-container .footer-nav .nav-item a:hover {
+  color: #F47322;
+}
 .footer-container .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,6 +1057,13 @@ body {
 }
 .footer-container .social-list .social-item:last-child {
   margin-right: 0;
+}
+.footer-container .social-list .social-item:hover {
+  background-color: #F37321;
+}
+.footer-container .social-list .social-item .social-link:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 .footer-container .social-list .social-item .telegram {
   width: 17px;

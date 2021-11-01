@@ -1,10 +1,9 @@
 const menuDescr = document.querySelectorAll('.content-descr');
 
-console.log(menuDescr[4].textContent.length)
 
 menuDescr.forEach(item => {
-    if (item.textContent.length >= 57) {
-        item.textContent = item.textContent.slice(0, 54) + '...'
+    if (item.textContent.length >= 47) {
+        item.textContent = item.textContent.slice(0, 44) + '...'
     }
 });
 
@@ -116,3 +115,25 @@ function slider(container, slide, nextArr, prevArr, wrapper, field) {
 }
 
 slider('.food-slider', '.food-slider-item', '.next', '.prev', '.food-slider-wrapper', '.food-slider-inner')
+
+//shopingCard
+
+const counter = document.querySelector('.counter'),
+      btnInShopingCard = document.querySelectorAll('.item-btn');
+
+let count = 0;
+
+if(count == 0) {
+    counter.style.display = 'none';
+} 
+
+btnInShopingCard.forEach(item => {
+    item.addEventListener('click', (e) => {
+        count++;
+        if (count > 0) {
+            counter.textContent = count;
+            counter.style.display = 'block'
+        }
+        
+    });
+});

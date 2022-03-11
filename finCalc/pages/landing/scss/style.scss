@@ -1,0 +1,218 @@
+@import 'null';
+@import 'vars';
+@import 'mixins';
+
+html{
+    scroll-behavior: smooth;
+    font-family: $fontfamily;
+        
+}
+body{
+    margin: 0 auto;
+    height: 100%;
+    background: -webkit-linear-gradient(45deg, rgb(110, 95, 126), rgb(50, 6, 60));
+    background: -moz-linear-gradient(45deg, rgb(110, 95, 126), rgb(50, 6, 60));
+    background: linear-gradient(45deg, rgb(110, 95, 126), rgb(50, 6, 60));
+}
+
+.body.lock{    
+    @media (max-width: 992px){
+        overflow: hidden;
+    }
+}
+
+.container{
+    max-width: 1400px;    
+}
+
+//title
+//=========================
+
+.title{
+    font-family: 'Architects Daughter', cursive;
+    font-style: italic;
+    @include fontsize(27px, 30px);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #c4c4c4;
+    position: relative;
+    font-weight: 600;
+}
+
+//block
+//=========================
+
+.block{
+    margin: 50px 0;
+}
+
+//header
+//=========================
+
+.header{
+    max-width: 1920px; 
+    display: block;
+    margin: 0 auto;  
+    &-container{
+        max-width: 1400px;
+        height: 100%;  
+        margin: 0 auto;
+        padding: 50px 0;
+        
+        .header-title{
+            @include fontsize(52px, 57px);
+            text-align: center;
+        }
+        .totalformonth{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 25px;
+            .month{
+                @include fontsize(52px, 57px);
+                text-align: center;
+                font-family: 'Architects Daughter', cursive;
+                font-style: italic;
+                @include fontsize(45px, 45px);
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #c4c4c4;
+                margin-right: 25px;
+            }
+            .final{
+                font-family: 'Architects Daughter', cursive;
+                font-style: italic;
+                @include fontsize(35px, 45px);
+                color: #c4c4c4; 
+            }
+        }
+        
+    }
+}
+
+.main{
+    max-width: 1920px;
+    min-height: 550px;  
+    display: block;
+    margin: 0 auto;  
+    &-container{
+        max-width: 1400px;
+        height: 100%;  
+        margin: 0 auto;
+        padding-top: 50px;
+        .main-wrapper{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .main-form{
+                .cotegories-list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .cotegories-item{
+                        width: 47%;
+                        margin: 0 25px 0 0;
+                        .cotegories-title{
+                            margin-bottom: 15px;
+                        }
+                        .inner-block{
+                            .input{
+                                width: 90%;
+                                background: transparent;
+                                border: none;
+                                border-bottom: 1px solid #c4c4c4;
+                                margin-bottom: 15px;
+                                height: 35px;
+                                @include fontsize(23px, 25px);
+                                font-family: 'Architects Daughter', cursive;
+                                font-style: italic;
+                                padding: 0 15px;
+                                color: #c4c4c4;
+                                margin: 0 auto;
+                                margin-left: 25px;
+                                &:focus{
+                                    outline: none;
+                                    background: transparent
+                                }
+                                &:active{
+                                    background: transparent
+                                }
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        
+                        
+                        .total{
+                            @include fontsize(23px, 25px);
+                            font-family: 'Architects Daughter', cursive;
+                            font-style: italic;
+                            color: #c4c4c4;
+                            @include fontsize(25px, 25px);
+                            text-align: right;
+                            margin-top: 50px;
+                        }
+                        &:after{
+                            content: '';
+                            width: 100%;
+                            height: 6px;
+                            background-color: #999;
+                            display: inline-flex;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+            }
+            .main-control{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 15px;
+                .add{
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    @include fontsize(35px, 35px);
+                    color: #c4c4c4;
+                    background-color: #2e053e;
+                    border: none;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #2e054e;
+                        -webkit-box-shadow: -5px -5px 5px -5px rgba(255, 255, 255, 0.6) inset;
+                        -moz-box-shadow: -5px -5px 5px -5px rgba(255, 255, 255, 0.6) inset;
+                        box-shadow: -5px -5px 5px -5px rgba(255, 255, 255, 0.6) inset;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// ul{
+//     width: 20px;
+//     height: 20px;
+//     display: block;
+//     div{
+//         width: 100%;
+//         height: 100%;
+//     }
+//     li{
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+.a{
+    width: 200px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid black ;
+    display: inline-block;
+}

@@ -1,0 +1,63 @@
+
+@import 'mixins';
+
+//fonts
+
+$fontfamily: 'Roboto', sans-serif;;
+
+
+//color
+
+$header-bg: #FFFFFF;
+$header-text: #333333;
+$header-switch-light: #F2F2F2;
+$header-switch-darck: #4F4F4F;
+$header-burger: #333333;
+$gallery-title: #FEFEFE;
+$gallery-btn-bg: #4BD8B5;
+$gallery-btn-bg-hover: #49D6DF;
+$gallery-control-bg: rgba(189, 189, 189, 0.57);
+$about-title: rgba(51, 51, 51, 1);
+$about-text: rgba(79, 79, 79, 1);
+$about-control: #333333;
+$about-control-light: rgba(189, 189, 189, 0.57);
+$features-bg: #F2F2F2;
+$feature-text: rgba(79, 79, 79, 1);
+$zoo-title: #333333;
+$pay-bg: #F2F2F2;
+$pay-item-title: #4F4F4F;
+$testimonials-item: #FEFEFE;
+$map-bg: #F2F2F2;
+$footer-title: #FEFEFE;
+$footer-bg: #333333;
+$footer-form-input: #E0E0E0;
+
+$btn-border: #c3a774;
+$lots-title: #1c242a;
+$decor-color: #bb9c66;
+$info-text: #000000;
+
+//width
+
+$minwidth: 320px;
+$mw: 970;
+$mb1: $mw + 12;
+$mb2: 901.98;
+$mb3: 767.98;
+$mb4: 479.98;
+
+//title
+
+%main-suptitle{
+    font-family: 'Conv_ceremonious_one';
+    @include fontsize(40px, 25px);
+    color: $header-burger;
+    margin: 30px 0;
+};
+
+%main-title{
+    font-family: "PFdin";
+    @include fontsize(35px, 35px);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+};

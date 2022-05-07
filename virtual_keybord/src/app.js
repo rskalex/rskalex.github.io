@@ -55,7 +55,6 @@ const keybord = {
 			this.elements.main.classList.add('kbd');
 			this.elements.keysContainer.classList.add('kbd-keys');
 			this.elements.keysContainer.appendChild(this.createKeys(this.keysLayout));
-			this.shiftPres = true;
 		}
 
 		if(this.shiftPres) {

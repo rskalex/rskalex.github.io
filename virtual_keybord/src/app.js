@@ -51,17 +51,9 @@ const keybord = {
 		this.elements.main = document.createElement('div');
 		this.elements.keysContainer = document.createElement('div');
 
-		if(!this.shiftPres) {
-			this.elements.main.classList.add('kbd');
-			this.elements.keysContainer.classList.add('kbd-keys');
-			this.elements.keysContainer.appendChild(this.createKeys(this.keysLayout));
-		}
-
-		if(this.shiftPres) {
-			this.elements.main.classList.add('kbd');
-			this.elements.keysContainer.classList.add('kbd-keys');
-			this.elements.keysContainer.appendChild(this.createKeys(this.keysLayoutShift));
-		}
+		this.elements.main.classList.add('kbd');
+		this.elements.keysContainer.classList.add('kbd-keys');
+		this.elements.keysContainer.appendChild(this.createKeys());
 
 		this.elements.keys = this.elements.keysContainer.querySelectorAll('.key');
 
@@ -83,20 +75,12 @@ const keybord = {
 		'ctrl', 'alt', ' ', 'alt', 'ctrl', 'left', 'down', 'right',
 	],
 
-	keysLayoutShift: [
-		'~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', 'backspace',
-		'tab', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '{', '}', '|',
-		'capslock', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ':', '"', 'enter',
-		'shiftleft', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '<', '>', '?', 'shiftright', 'up',
-		'ctrlleft', 'altleft', ' ', 'altleft', 'ctrlleft', 'left', 'down', 'right',
-	],
-
-	createKeys(array) {
+	createKeys() {
 		const fragment = document.createDocumentFragment();
 
 		const createIcon = (iconName) => `<i class="material-icons">${iconName}</i>`;
 
-		array.forEach((key, i) => {
+		this.keysLayout.forEach((key, i) => {
 			const keyElem = document.createElement('button');
 			const insertBR = ['backspace', '\\', 'enter', 'up'].indexOf(key) !== -1;
 

@@ -1,0 +1,39 @@
+.container-sm{
+    max-width: 500px;
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+    .header{
+        text-align: center;
+        img{
+            max-width: 40px;
+        }
+    }
+    p{
+        font-size: 36px;
+        position: relative;
+        
+        span {
+            color: #0d6efd;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 3px;
+            left: 10%;
+            bottom: -7px;
+            background-color: #0d6efd;
+        }
+    }
+    form{
+        margin-top: 35px;
+        input{
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+}
